@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Date App — Social Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Date App</h1>
+    <div class="user-area">
+      <span id="current-username">You</span>
+      <button id="reset-btn" title="Reset demo data">Reset</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <section class="profile-card">
+        <h2>Profile</h2>
+        <div class="profile-info">
+          <div class="avatar">VB</div>
+          <div>
+            <div id="profile-name">Victor Baraka</div>
+            <div class="muted" id="profile-following-count">Following 0</div>
+          </div>
+        </div>
+        <button id="toggle-follow-btn">Follow sample users</button>
+      </section>
+
+  <section class="suggestions">
+    <h3>Suggested</h3>
+    <ul id="suggested-list"></ul>
+  </section>
+</aside>
+
+<section class="feed">
+  <div class="composer">
+    <textarea id="post-content" rows="3" placeholder="Share something..."></textarea>
+    <div class="composer-actions">
+      <input id="post-name" placeholder="Display name (optional)" />
+      <button id="post-btn">Post</button>
+    </div>
+  </div>
+
+  <div id="feed-list" class="posts"></div>
+</section>
+  
+
+</main
+
+  <footer class="footer">
+    Prototype — data saved in your browser. Deploys to GitHub Pages.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
